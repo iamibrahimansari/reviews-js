@@ -1,7 +1,7 @@
 const employees = [
     {
         img: {
-            url: '../images/emp1.jpg',
+            url: './images/emp1.jpg',
             width: 1000,
             height: 1500
         },
@@ -11,7 +11,7 @@ const employees = [
     },
     {
         img: {
-            url: '../images/emp2.jpg',
+            url: './images/emp2.jpg',
             width: 1000,
             height: 667
         },
@@ -21,7 +21,7 @@ const employees = [
     },
     {
         img: {
-            url: '../images/emp3.jpg',
+            url: './images/emp3.jpg',
             width: 1000,
             height: 1500
         },
@@ -31,7 +31,7 @@ const employees = [
     },
     {
         img: {
-            url: '../images/emp4.jpg',
+            url: './images/emp4.jpg',
             width: 1000,
             height: 668
         },
