@@ -5,11 +5,13 @@
   "description": "A mini project just by using html, css and pure js, no framework.",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch",
+    "deploy": "gh-pages -d build"
   },
   "author": "Ibrahim Ansari",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0"
   }
 }
