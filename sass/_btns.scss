@@ -1,0 +1,74 @@
+@mixin btn($angle){
+    transform: rotate($angle);
+}
+
+@mixin left-right-btn{
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.footer{
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    .btns{
+        display: flex;
+        gap: 3rem;
+        &__btn{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            cursor: pointer;
+            background-color: #444;
+            position: absolute;
+            &:hover{
+                background-color: gray;
+            }
+        }
+        span{
+            width: 13px;
+            height: 3px;
+            background-color: #fff;
+        }
+    
+        .left-btn{
+            @include left-right-btn;   
+            left: -3%;
+            span:first-child{
+                @include btn(-45deg);
+            }
+            span:last-child{
+                @include btn(45deg);
+            }
+            display: none;
+        }
+        .right-btn{
+            right: -3%;
+            @include left-right-btn;
+            span:first-child{
+                @include btn(45deg);
+            }
+            span:last-child{
+                @include btn(-45deg);
+            }
+        }
+    }
+    .btn{
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: yellowgreen;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 255, 0.123);
+        cursor: pointer;
+        &:hover{
+            background-color: #19195ea9;
+            transition: background-color 0.3s linear;
+        }
+    }
+}

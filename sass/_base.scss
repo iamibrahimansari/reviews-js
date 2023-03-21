@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.container{
+    width: 40%;
+    margin: 3rem auto;
+    padding: 3rem;
+}
+
+.container > div{
+    position: relative;
+}
+
+.main, .footer{
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}

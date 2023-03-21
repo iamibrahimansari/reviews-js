@@ -1,0 +1,51 @@
+.main{
+    margin-top: 2rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    position: relative;
+    &__profile{
+        height: 80%;
+        &__img{
+            margin-inline: auto;
+            height: 15rem;
+            width: 15rem;
+            margin-bottom: 1rem;
+            position: relative;
+            .fa-sharp{
+                z-index: 10;
+                font-size: 3rem;
+                top: 0;
+                position: absolute;
+                background-color: rgb(27, 121, 172);
+                color: #fff;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                box-shadow: 7px -7px 0 0 #4f81ba;
+            }
+        }
+
+        .name{
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        .profession{
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+    &__desc{
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        color: #6c6969;
+    }
+}

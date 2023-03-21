@@ -1,0 +1,15 @@
+.header{
+    &__h1{
+        font-size: 5rem;
+        font-weight: 500;
+        color: #444;
+        text-align: center;
+    }
+
+    &__line{
+        margin-inline: auto;
+        width: 10rem;
+        height: 0.5rem;
+        background-color: blue;
+    }
+}
