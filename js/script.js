@@ -32,10 +32,6 @@ const helperFunction = emp =>{
     desc.textContent = detail;
 }
 
-const handleSurpriseBtn = emp =>{
-    helperFunction(emp);
-}
-
 const handleLeftRightBtns = emp =>{
     btns[1].style.display = emp === emps[lIndex] ? 'none' : 'flex';
     btns[0].style.display = index > 0 ? 'flex' : 'none';
@@ -53,10 +49,12 @@ btns.forEach(btn =>{
 })
 
 btn.addEventListener('click', event =>{
-    let emp = emps[parseInt(Math.random() * emps.length)];
+    index = parseInt(Math.random() * emps.length);
+    let emp = emps[index];
     while(emp === previousEmp){
-        emp = emps[parseInt(Math.random() * emps.length)];
+        index = parseInt(Math.random() * emps.length);
+        emp = emps[index];
     }
     previousEmp = emp;
-    handleSurpriseBtn(emp);
+    handleLeftRightBtns(emp);
 })
