@@ -5,8 +5,7 @@
   "description": "A mini project just by using html, css and pure js, no framework.",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/style.css --watch",
-    "deploy": "gh-pages -d build"
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
   },
   "author": "Ibrahim Ansari",
   "license": "ISC",
